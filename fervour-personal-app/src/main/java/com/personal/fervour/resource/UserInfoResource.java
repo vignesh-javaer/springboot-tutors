@@ -48,6 +48,7 @@ public class UserInfoResource implements ResponseEntityMapper<UserInfo>{
 
 	@PostMapping("/profile/{id}")
 	public void getUser() {
+		
 
 	}
 
