@@ -13,10 +13,14 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.hateoas.ResourceSupport;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -35,30 +39,43 @@ public class UserInfo
 	
 	@Id
 	@Column(name="USER_ID")
-	@NotBlank
+	@Pattern(regexp="^$|[a-zA-Z0-9_.]*")
+	@Size(min=5, max=20)
+	@NotNull
 	private String userId;
 	
 	@Column(name="FIRST_NAME")
-	@NotBlank
+	@NotNull
 	private String firstName;
 	
 	@Column(name="LAST_NAME")
-	@NotBlank
+	@NotNull
 	private String lastName;
 	
-	@Column(name="EMAIL")
-	@NotBlank
+	@Column(name="EMAIL", unique=true)
+	@NotNull
 	@Email
 	private String email;
 	
-	@Column(name="MOBILE")
-	@NotBlank
-	@Pattern(regexp="^$|[0-9] {10}")
+	@Column(name="MOBILE", unique=true)
+	@NotNull
+	@Pattern(regexp="^$|[0-9]{10}")
 	private String mobile;
 	
 	@Column(name="PKE")
 	@NotBlank
 	private String pke;
+	
+	@Column(name="BIRTH_DATE")
+	@JsonFormat(shape= Shape.STRING, pattern="yyyy-MM-dd")
+	@Temporal(TemporalType.DATE)
+	@NotNull
+	private Date birthDate;
+	
+	@Column(name="STATUS")
+	@NotNull
+	private String status = "ACTIVE";
+	
 	
 	@Column(name="CREATE_DATE")
 	@CreationTimestamp
@@ -71,14 +88,6 @@ public class UserInfo
 	@UpdateTimestamp
 	private Date lastLoginDate;
 	
-	@Column(name="STATUS")
-	@NotNull
-	private String status = "ACTIVE";
-	
-	@Column(name="BIRTH_DATE")
-	@NotBlank
-	@Temporal(TemporalType.DATE)
-	private Date birthDate;
 	
 
 }
