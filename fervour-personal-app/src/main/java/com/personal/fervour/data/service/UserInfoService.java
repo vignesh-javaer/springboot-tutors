@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.personal.fervour.service;
+package com.personal.fervour.data.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.personal.fervour.model.UserInfo;
+import com.personal.fervour.target.model.UserInfo;
 
 /**
  * @author vignesh
@@ -20,7 +20,7 @@ public interface UserInfoService {
 	
 	UserInfo updateUser(UserInfo user);
 	
-	UserInfo getUserById(String userId);
+	Optional<UserInfo> getUserById(String userId);
 	
 	Optional<UserInfo> getUserByEmail(String email);
 	

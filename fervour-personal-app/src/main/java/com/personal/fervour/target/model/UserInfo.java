@@ -1,4 +1,4 @@
-package com.personal.fervour.model;
+package com.personal.fervour.target.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -12,6 +12,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
@@ -21,6 +22,7 @@ import org.springframework.hateoas.ResourceSupport;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +31,7 @@ import lombok.ToString;
 
 @Entity
 @Table(name="USER_INFO")
+@JsonIgnoreProperties(value= {"createDate","lastUpdateDate","lastLoginDate","pke","status","hibernateLazyInitializer"},allowSetters=true)
 @Getter @Setter
 @ToString
 public class UserInfo 
@@ -66,6 +69,7 @@ public class UserInfo
 	@NotBlank
 	private String pke;
 	
+	@Past
 	@Column(name="BIRTH_DATE")
 	@JsonFormat(shape= Shape.STRING, pattern="yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)

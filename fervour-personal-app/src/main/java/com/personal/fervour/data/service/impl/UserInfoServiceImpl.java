@@ -1,17 +1,19 @@
 /**
  * 
  */
-package com.personal.fervour.service.impl;
+package com.personal.fervour.data.service.impl;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.personal.fervour.dao.UserInfoDao;
-import com.personal.fervour.model.UserInfo;
-import com.personal.fervour.service.UserInfoService;
+import com.personal.fervour.data.dao.UserInfoDao;
+import com.personal.fervour.data.service.UserInfoService;
+import com.personal.fervour.target.model.UserInfo;
 
 /**
  * @author vignesh
@@ -39,13 +41,14 @@ public class UserInfoServiceImpl implements UserInfoService{
 	}
 
 	@Override
+	@Transactional(propagation=Propagation.REQUIRED,rollbackFor=Exception.class)
 	public UserInfo updateUser(UserInfo user) {
-		return userInfoRepo.saveAndFlush(user);
+		return userInfoRepo.save(user);
 	}
 
 	@Override
-	public UserInfo getUserById(String userId) {
-		return userInfoRepo.getOne(userId);
+	public Optional<UserInfo> getUserById(String userId) {
+		return userInfoRepo.findById(userId);
 	}
 
 	@Override

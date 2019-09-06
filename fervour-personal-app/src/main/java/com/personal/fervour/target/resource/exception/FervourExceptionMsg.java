@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.personal.fervour.resource.exception;
+package com.personal.fervour.target.resource.exception;
 
 /**
  * @author vignesh

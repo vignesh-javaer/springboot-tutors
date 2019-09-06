@@ -1,4 +1,4 @@
-package com.personal.fervour.response;
+package com.personal.fervour.cmm.response;
 
 public enum ResponseType {
 	
