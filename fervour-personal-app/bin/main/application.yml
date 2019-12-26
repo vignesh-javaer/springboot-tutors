@@ -14,17 +14,27 @@ spring:
 #JPA
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     database-platform:  org.hibernate.dialect.MySQL5InnoDBDialect
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
 #logging
 logging:
   level:
-    org.springframework: info
-    org.springframework.web: DEBUG
-    com.personal.fervour: error
-    org.hibernate: debug
+    web: DEBUG
+    org.springframework.boot.devtools: DEBUG
+    org.springframework: INFO
+    org.springframework.web: TRACE
+    org.springframework.boot: INFO
+    com.personal.fervour: DEBUG
+    org.hibernate: ERROR
   file: ./logs/fervour_personal.log
   pattern:
     file: "%d %p %c{1.} [%t] %m%n"
     console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    
+   
+ 

@@ -1,0 +1,881 @@
+2019-12-25 17:44:07,824 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2003 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 17:44:07,840 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 17:44:07,843 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 17:44:08,049 DEBUG org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] Matching URLs for reloading : [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 17:44:08,050 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Included patterns for restart : []
+2019-12-25 17:44:08,050 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+2019-12-25 17:44:08,051 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-25 17:44:12,753 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 17:44:13,049 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 266ms. Found 2 repository interfaces.
+2019-12-25 17:44:15,135 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15d20372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:44:15,281 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$955250a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:44:16,907 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 17:44:17,058 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 17:44:17,059 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 17:44:17,600 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 17:44:17,601 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 17:44:17,602 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 9551 ms
+2019-12-25 17:44:21,419 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 17:44:21,430 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 17:44:22,076 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-12-25 17:44:22,789 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-12-25 17:44:23,120 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-25 17:44:23,653 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2019-12-25 17:44:23,659 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2019-12-25 17:44:24,366 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-25 17:44:25,110 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-12-25 17:44:27,825 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:44:28,581 DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer [restartedMain] Starting live reload server on port 35729
+2019-12-25 17:44:28,592 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 17:44:29,739 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-12-25 17:44:31,647 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 17:44:31,855 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 17:44:31,897 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 17:44:31,905 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 17:44:31,920 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 17:44:31,937 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 17:44:31,958 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 17:44:31,979 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 13 mappings in 'requestMappingHandlerMapping'
+2019-12-25 17:44:32,345 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 17:44:32,723 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 17:44:32,987 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 17:44:32,988 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 17:44:33,460 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:44:33,545 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 17:44:33,918 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 17:44:33,941 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 17:44:33,942 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 17:44:33,942 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 17:44:33,987 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 17:44:35,054 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 17:44:35,158 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 17:44:35,256 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 17:44:36,155 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 17:44:36,164 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 17:44:36,184 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 17:44:36,412 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:44:36,418 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 17:44:36,418 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@37ddd2fa
+2019-12-25 17:44:36,440 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 17:44:36,446 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 17:44:36,462 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 17:44:36,488 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 17:44:36,489 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 17:44:36,490 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 71 ms
+2019-12-25 17:44:37,470 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 17:44:37,476 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 50.741 seconds (JVM running for 52.337)
+2019-12-25 17:44:37,650 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Creating new Restarter for thread Thread[main,5,main]
+2019-12-25 17:44:37,652 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Immediately restarting application
+2019-12-25 17:44:37,652 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@519c316c
+2019-12-25 17:44:37,653 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 17:49:59,565 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:49:59,610 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-1] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:49:59,927 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-1] Resource not found
+2019-12-25 17:49:59,928 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 17:49:59,930 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:50:00,010 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:50:00,031 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:50:00,034 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:50:00,303 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@261b093a, org.apache.catalina.connector.ResponseFacade@5cfd468f]
+2019-12-25 17:50:00,433 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-1] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:50:00,434 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@3f15d5bf] 
+2019-12-25 17:50:00,575 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:50:33,772 DEBUG org.springframework.boot.devtools.restart.Restarter [File Watcher] Restarting application
+2019-12-25 17:50:33,789 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Stopping application
+2019-12-25 17:50:33,850 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:50:33,863 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:50:33,967 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2019-12-25 17:50:34,015 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2019-12-25 17:50:34,842 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6daba253
+2019-12-25 17:50:34,842 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 17:50:50,109 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2003 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 17:50:50,109 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 17:50:50,110 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 17:50:51,480 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 17:50:51,555 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 73ms. Found 2 repository interfaces.
+2019-12-25 17:50:51,926 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15d20372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:50:51,944 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$955250a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:50:52,288 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 17:50:52,296 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 17:50:52,297 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 17:50:52,326 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 17:50:52,327 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 17:50:52,327 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 2213 ms
+2019-12-25 17:50:52,877 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 17:50:52,877 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 17:50:52,975 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2019-12-25 17:50:52,988 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2019-12-25 17:50:53,019 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-25 17:50:53,092 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-12-25 17:50:53,536 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:50:53,568 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 17:50:53,773 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-12-25 17:50:54,419 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 17:50:54,457 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 17:50:54,460 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 17:50:54,465 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 17:50:54,480 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 17:50:54,487 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 17:50:54,510 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 17:50:54,535 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 13 mappings in 'requestMappingHandlerMapping'
+2019-12-25 17:50:54,698 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 17:50:54,889 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 17:50:55,000 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 17:50:55,000 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 17:50:55,155 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:50:55,193 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 17:50:55,219 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 17:50:55,227 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 17:50:55,228 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 17:50:55,228 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 17:50:55,245 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 17:50:55,718 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 17:50:55,721 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 17:50:55,755 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 17:50:56,008 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 17:50:56,018 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 17:50:56,021 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 17:50:56,282 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 17:50:56,289 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 21.345 seconds (JVM running for 431.138)
+2019-12-25 17:50:56,302 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-12-25 17:50:57,544 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:50:57,547 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 17:50:57,547 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@2f674910
+2019-12-25 17:50:57,551 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 17:50:57,553 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 17:50:57,563 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 17:50:57,568 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 17:50:57,568 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 17:50:57,568 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 21 ms
+2019-12-25 17:51:05,732 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:05,746 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-1] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:51:05,748 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-1] Resource not found
+2019-12-25 17:51:05,749 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 17:51:05,749 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:51:05,752 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:05,757 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:51:05,758 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:51:05,765 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@3f192be8, org.apache.catalina.connector.ResponseFacade@7a1bb26f]
+2019-12-25 17:51:05,782 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-1] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:51:05,782 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@52e41d90] 
+2019-12-25 17:51:05,784 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:51:08,360 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] GET "/fervour-todo/customer/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:08,371 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-2] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:51:08,373 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-2] Resource not found
+2019-12-25 17:51:08,374 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] No view rendering, null ModelAndView returned.
+2019-12-25 17:51:08,374 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:51:08,376 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:08,383 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-2] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:51:08,386 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-2] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:51:08,387 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-2] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@5e9e832c, org.apache.catalina.connector.ResponseFacade@7a1bb26f]
+2019-12-25 17:51:08,408 TRACE org.springframework.web.servlet.view.InternalResourceViewResolver [http-nio-9001-exec-2] View with key [error] served from cache
+2019-12-25 17:51:08,408 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-2] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:51:08,409 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@52e41d90] 
+2019-12-25 17:51:08,409 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-2] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:51:21,823 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] GET "/fervour-todo/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:21,837 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-5] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:51:21,843 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-5] Resource not found
+2019-12-25 17:51:21,844 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] No view rendering, null ModelAndView returned.
+2019-12-25 17:51:21,847 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:51:21,848 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:21,856 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-5] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:51:21,859 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-5] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:51:21,860 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-5] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@7066f723, org.apache.catalina.connector.ResponseFacade@7a1bb26f]
+2019-12-25 17:51:21,894 TRACE org.springframework.web.servlet.view.InternalResourceViewResolver [http-nio-9001-exec-5] View with key [error] served from cache
+2019-12-25 17:51:21,894 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-5] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:51:21,894 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@52e41d90] 
+2019-12-25 17:51:21,896 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-5] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:51:37,569 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] GET "/fervour-todo/customer", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:37,578 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-8] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:51:37,582 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-8] Resource not found
+2019-12-25 17:51:37,583 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] No view rendering, null ModelAndView returned.
+2019-12-25 17:51:37,585 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:51:37,588 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:51:37,594 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-8] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:51:37,595 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-8] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:51:37,597 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-8] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@43f1700a, org.apache.catalina.connector.ResponseFacade@7a1bb26f]
+2019-12-25 17:51:37,625 TRACE org.springframework.web.servlet.view.InternalResourceViewResolver [http-nio-9001-exec-8] View with key [error] served from cache
+2019-12-25 17:51:37,626 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-8] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:51:37,627 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@52e41d90] 
+2019-12-25 17:51:37,640 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-8] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:52:28,046 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/users/profile/10001", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:52:28,055 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public org.springframework.http.ResponseEntity<com.personal.fervour.target.model.UserInfo> com.personal.fervour.target.resource.UserInfoResource.getUser(java.lang.String)
+2019-12-25 17:52:28,077 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [10001]
+2019-12-25 17:52:28,708 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleUserAlreadyExistException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 17:52:28,709 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [com.personal.fervour.target.resource.exception.UserNotFoundException: User not found for userId: 10001, ServletWebRequest: uri=/fervour-todo/users/profile/10001;client=0:0:0:0:0:0:0:1]
+2019-12-25 17:52:28,858 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml, application/xml, text/xml, application/*+xml]
+2019-12-25 17:52:28,873 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 17:52:28 IST 2019, status=404, message=User not found for userId: 10001, debugMsg=com.personal.fervour.target.resource.exception.UserNotFoundException: User not found for userId: 10001, path=/fervour-todo/users/profile/10001)]
+2019-12-25 17:52:29,336 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [com.personal.fervour.target.resource.exception.UserNotFoundException: User not found for userId: 10001]
+2019-12-25 17:52:29,336 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 17:52:29,347 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 404 NOT_FOUND, headers={masked}
+2019-12-25 17:53:35,318 DEBUG org.springframework.boot.devtools.restart.Restarter [File Watcher] Restarting application
+2019-12-25 17:53:35,325 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Stopping application
+2019-12-25 17:53:35,346 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-11] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:53:35,358 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:53:35,360 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown initiated...
+2019-12-25 17:53:35,381 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown completed.
+2019-12-25 17:53:36,707 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@76c270d6
+2019-12-25 17:53:36,709 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 17:53:51,964 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2003 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 17:53:51,965 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 17:53:51,966 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 17:53:53,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 17:53:53,587 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38ms. Found 2 repository interfaces.
+2019-12-25 17:53:53,847 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15d20372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:53:53,861 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$955250a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 17:53:54,216 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 17:53:54,221 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 17:53:54,222 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 17:53:54,251 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 17:53:54,252 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 17:53:54,253 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 2284 ms
+2019-12-25 17:53:54,809 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 17:53:54,810 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 17:53:54,941 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2019-12-25 17:53:55,020 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2019-12-25 17:53:55,058 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-25 17:53:55,143 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-12-25 17:53:55,567 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:53:55,588 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 17:53:55,759 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-12-25 17:53:56,322 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 17:53:56,350 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 17:53:56,352 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 17:53:56,355 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 17:53:56,359 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 17:53:56,362 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 17:53:56,366 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 17:53:56,373 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 13 mappings in 'requestMappingHandlerMapping'
+2019-12-25 17:53:56,615 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 17:53:56,808 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 17:53:56,981 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 17:53:56,982 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 17:53:57,149 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:53:57,173 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 17:53:57,183 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 17:53:57,200 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 17:53:57,200 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 17:53:57,201 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 17:53:57,222 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 17:53:57,627 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 17:53:57,632 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 17:53:57,662 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 17:53:57,803 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 17:53:57,809 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 17:53:57,817 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 17:53:58,002 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 17:53:58,004 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 21.214 seconds (JVM running for 612.848)
+2019-12-25 17:53:58,029 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-12-25 17:54:02,362 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:54:02,364 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 17:54:02,364 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@36dabb22
+2019-12-25 17:54:02,366 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 17:54:02,367 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 17:54:02,373 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 17:54:02,377 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 17:54:02,377 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 17:54:02,377 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 13 ms
+2019-12-25 17:55:15,960 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:55:15,973 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [http-nio-9001-exec-1] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 5 interceptors
+2019-12-25 17:55:15,976 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-9001-exec-1] Resource not found
+2019-12-25 17:55:15,976 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 17:55:15,977 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 404 NOT_FOUND, headers={}
+2019-12-25 17:55:15,979 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] "ERROR" dispatch for GET "/fervour-todo/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:55:15,982 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+2019-12-25 17:55:15,989 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-25 17:55:15,991 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@4758058f, org.apache.catalina.connector.ResponseFacade@25a9300]
+2019-12-25 17:55:16,010 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-9001-exec-1] Selected 'text/html' given [text/html, text/html;q=0.8]
+2019-12-25 17:55:16,011 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@1419d90c] 
+2019-12-25 17:55:16,011 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Exiting from "ERROR" dispatch, status 404, headers={}
+2019-12-25 17:56:22,188 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-4] GET "/fervour-todo/v2/api-docs", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 17:56:22,194 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-4] Arguments: [null, org.apache.catalina.connector.RequestFacade@5aec3814]
+2019-12-25 17:56:23,658 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-4] Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml, application/xml, text/xml, application/*+xml]
+2019-12-25 17:56:23,660 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-4] Writing [springfox.documentation.spring.web.json.Json@4c0bb468]
+2019-12-25 17:56:23,668 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-4] No view rendering, null ModelAndView returned.
+2019-12-25 17:56:23,668 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-4] Completed 200 OK, headers={masked}
+2019-12-25 17:57:27,214 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-22] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 17:57:27,219 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-22] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 17:57:27,223 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-3 - Shutdown initiated...
+2019-12-25 17:57:27,239 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-3 - Shutdown completed.
+2019-12-25 18:05:24,046 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2161 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 18:05:24,051 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 18:05:24,052 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 18:05:24,195 DEBUG org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] Matching URLs for reloading : [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:05:24,196 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Included patterns for restart : []
+2019-12-25 18:05:24,196 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+2019-12-25 18:05:24,197 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-25 18:05:27,516 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 18:05:27,789 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 250ms. Found 2 repository interfaces.
+2019-12-25 18:05:29,778 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cdebd16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:05:29,956 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ac5f0a48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:05:31,176 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 18:05:31,305 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 18:05:31,306 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 18:05:31,637 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 18:05:31,638 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 18:05:31,639 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 7442 ms
+2019-12-25 18:05:33,115 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 18:05:33,116 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 18:05:33,468 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-12-25 18:05:34,067 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-12-25 18:05:34,360 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-25 18:05:34,597 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.10.Final}
+2019-12-25 18:05:34,601 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2019-12-25 18:05:35,105 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-25 18:05:35,632 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-12-25 18:05:37,942 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:05:38,130 DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer [restartedMain] Starting live reload server on port 35729
+2019-12-25 18:05:38,152 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 18:05:39,777 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-12-25 18:05:41,226 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 18:05:41,401 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 18:05:41,453 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 18:05:41,472 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 18:05:41,503 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 18:05:41,512 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.w.c.CustomerController:
+	{GET /customer/query}: getRequestMessage()
+2019-12-25 18:05:41,518 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+2019-12-25 18:05:41,538 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 18:05:41,588 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 14 mappings in 'requestMappingHandlerMapping'
+2019-12-25 18:05:41,877 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 18:05:42,210 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 18:05:42,464 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 18:05:42,465 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 18:05:42,972 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:05:43,085 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 18:05:43,288 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 18:05:43,316 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 18:05:43,316 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 18:05:43,317 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 18:05:43,377 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 18:05:44,190 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 18:05:44,245 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 18:05:44,380 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 18:05:44,877 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 18:05:44,886 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 18:05:44,893 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 18:05:44,981 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRequestMessageUsingGET_1
+2019-12-25 18:05:45,377 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 18:05:45,384 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 42.387 seconds (JVM running for 43.695)
+2019-12-25 18:05:45,422 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Creating new Restarter for thread Thread[main,5,main]
+2019-12-25 18:05:45,423 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Immediately restarting application
+2019-12-25 18:05:45,423 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@ed0e937
+2019-12-25 18:05:45,424 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:05:48,226 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:05:48,277 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 18:05:48,278 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@5b78c1c4
+2019-12-25 18:05:48,312 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 18:05:48,317 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 18:05:48,338 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 18:05:48,373 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 18:05:48,373 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 18:05:48,373 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 96 ms
+2019-12-25 18:07:38,251 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:07:38,345 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:07:38,548 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: []
+2019-12-25 18:07:38,744 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:07:38,753 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:07:38,854 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:07:38,857 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:07:38 IST 2019, status=null, message=Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:07:39,057 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria]
+2019-12-25 18:07:39,057 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 18:07:39,104 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:08:22,140 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:08:22,152 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:08:22,172 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-1 - Shutdown initiated...
+2019-12-25 18:08:22,198 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-1 - Shutdown completed.
+2019-12-25 18:09:10,580 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2193 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 18:09:10,589 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 18:09:10,591 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 18:09:10,800 DEBUG org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] Matching URLs for reloading : [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:09:10,801 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Included patterns for restart : []
+2019-12-25 18:09:10,802 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+2019-12-25 18:09:10,803 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-25 18:09:15,960 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 18:09:16,292 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 297ms. Found 2 repository interfaces.
+2019-12-25 18:09:18,543 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f67d163c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:09:18,710 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$75fd636e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:09:20,014 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 18:09:20,143 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 18:09:20,144 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 18:09:20,605 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 18:09:20,605 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 18:09:20,606 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 9803 ms
+2019-12-25 18:09:22,587 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 18:09:22,588 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 18:09:23,110 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-12-25 18:09:23,899 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-12-25 18:09:29,562 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:09:29,624 DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer [restartedMain] Starting live reload server on port 35729
+2019-12-25 18:09:29,628 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 18:09:32,864 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 18:09:33,154 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 18:09:33,210 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 18:09:33,224 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 18:09:33,255 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 18:09:33,264 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.w.c.CustomerController:
+	{GET /customer/query}: getRequestMessage()
+2019-12-25 18:09:33,274 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 18:09:33,292 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 18:09:33,309 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 14 mappings in 'requestMappingHandlerMapping'
+2019-12-25 18:09:33,611 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 18:09:34,005 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 18:09:34,319 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 18:09:34,320 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 18:09:34,843 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:09:34,990 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 18:09:35,218 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 18:09:35,338 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 18:09:35,350 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 18:09:35,351 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 18:09:35,409 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 18:09:36,560 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 18:09:36,659 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 18:09:36,847 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 18:09:37,491 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 18:09:37,498 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 18:09:37,504 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 18:09:37,628 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRequestMessageUsingGET_1
+2019-12-25 18:09:38,156 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 18:09:38,166 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 46.511 seconds (JVM running for 50.746)
+2019-12-25 18:09:38,275 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Creating new Restarter for thread Thread[main,5,main]
+2019-12-25 18:09:38,276 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Immediately restarting application
+2019-12-25 18:09:38,276 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7374c147
+2019-12-25 18:09:38,276 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:09:39,280 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:09:39,283 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 18:09:39,284 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@4b7b8059
+2019-12-25 18:09:39,295 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 18:09:39,305 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 18:09:39,320 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 18:09:39,339 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 18:09:39,346 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 18:09:39,347 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 63 ms
+2019-12-25 18:12:22,279 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:12:22,412 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:12:22,642 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: []
+2019-12-25 18:12:22,806 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:12:22,820 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:12:23,100 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:12:23,126 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:12:22 IST 2019, status=null, message=Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:12:23,422 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria]
+2019-12-25 18:12:23,423 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 18:12:23,425 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:13:05,723 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-3] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:13:05,737 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-3] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:13:05,740 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-3] Arguments: []
+2019-12-25 18:13:41,459 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-3] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:13:41,461 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-3] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:13:41,465 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-3] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:13:41,466 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-3] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:13:41 IST 2019, status=null, message=Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:13:41,478 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-3] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Error occurred validating the Criteria; nested exception is java.lang.IllegalArgumentException: Error occurred validating the Criteria]
+2019-12-25 18:13:41,482 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-3] No view rendering, null ModelAndView returned.
+2019-12-25 18:13:41,482 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-3] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:15:50,939 DEBUG org.springframework.boot.devtools.restart.Restarter [File Watcher] Restarting application
+2019-12-25 18:15:50,950 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Stopping application
+2019-12-25 18:15:51,001 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:15:51,025 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:15:51,092 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2019-12-25 18:15:51,172 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2019-12-25 18:15:52,037 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@61e417f3
+2019-12-25 18:15:52,038 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-6] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:16:07,280 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2193 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 18:16:07,281 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 18:16:07,282 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 18:16:09,494 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 18:16:09,563 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 68ms. Found 2 repository interfaces.
+2019-12-25 18:16:09,949 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f67d163c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:16:09,972 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$75fd636e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:16:10,340 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 18:16:10,349 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 18:16:10,351 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 18:16:10,383 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 18:16:10,383 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 18:16:10,383 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3089 ms
+2019-12-25 18:16:11,071 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 18:16:11,072 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 18:16:11,234 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2019-12-25 18:16:11,264 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2019-12-25 18:16:11,802 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:16:11,832 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 18:16:12,789 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 18:16:12,827 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 18:16:12,832 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 18:16:12,836 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 18:16:12,841 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 18:16:12,847 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.w.c.CustomerController:
+	{GET /customer/query}: getRequestMessage()
+2019-12-25 18:16:12,855 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 18:16:12,866 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 18:16:12,889 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 14 mappings in 'requestMappingHandlerMapping'
+2019-12-25 18:16:13,011 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 18:16:13,289 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 18:16:13,558 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 18:16:13,559 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 18:16:13,887 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:16:13,914 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 18:16:13,940 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 18:16:13,972 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 18:16:13,972 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 18:16:13,973 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 18:16:14,063 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 18:16:14,612 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 18:16:14,616 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 18:16:14,642 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 18:16:14,863 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 18:16:14,871 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 18:16:14,875 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 18:16:14,913 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRequestMessageUsingGET_1
+2019-12-25 18:16:15,206 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 18:16:15,212 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 23.127 seconds (JVM running for 447.752)
+2019-12-25 18:16:15,226 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-12-25 18:16:18,436 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:16:18,438 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 18:16:18,439 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@29a9170
+2019-12-25 18:16:18,444 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 18:16:18,446 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 18:16:18,457 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 18:16:18,462 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 18:16:18,462 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 18:16:18,462 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 23 ms
+2019-12-25 18:17:11,487 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:17:11,500 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:17:11,503 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: []
+2019-12-25 18:17:25,638 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:17:25,639 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:17:25,718 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:17:25,719 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:17:25 IST 2019, status=null, message=Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:17:25,725 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer]
+2019-12-25 18:17:25,726 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 18:17:25,727 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:18:29,046 DEBUG org.springframework.boot.devtools.restart.Restarter [File Watcher] Restarting application
+2019-12-25 18:18:29,049 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Stopping application
+2019-12-25 18:18:29,065 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-11] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:18:29,083 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:18:29,090 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown initiated...
+2019-12-25 18:18:29,125 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown completed.
+2019-12-25 18:18:30,188 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6f63903c
+2019-12-25 18:18:30,188 DEBUG org.springframework.boot.devtools.restart.Restarter [Thread-11] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:18:45,366 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2193 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 18:18:45,367 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 18:18:45,368 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 18:18:47,234 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 18:18:47,286 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51ms. Found 2 repository interfaces.
+2019-12-25 18:18:47,596 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f67d163c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:18:47,609 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$75fd636e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:18:47,951 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 18:18:47,957 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 18:18:47,958 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 18:18:47,985 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 18:18:47,985 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 18:18:47,986 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 2612 ms
+2019-12-25 18:18:48,614 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 18:18:48,615 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 18:18:48,742 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2019-12-25 18:18:48,757 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2019-12-25 18:18:49,283 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:18:49,314 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 18:18:50,556 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 18:18:50,679 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 18:18:50,681 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 18:18:50,720 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 18:18:50,729 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+	{POST /users/profile}: addUser(UserInfo)
+2019-12-25 18:18:50,733 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.w.c.CustomerController:
+	{GET /customer/query}: getRequestMessage()
+2019-12-25 18:18:50,736 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 18:18:50,744 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 18:18:50,779 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 14 mappings in 'requestMappingHandlerMapping'
+2019-12-25 18:18:51,004 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 18:18:51,216 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 18:18:51,292 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 18:18:51,292 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 18:18:51,611 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:18:51,623 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 18:18:51,633 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 18:18:51,639 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 18:18:51,639 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 18:18:51,639 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 18:18:51,651 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 18:18:52,085 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 18:18:52,089 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 18:18:52,114 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 18:18:52,291 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 18:18:52,295 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 18:18:52,307 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 18:18:52,364 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRequestMessageUsingGET_1
+2019-12-25 18:18:52,525 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 18:18:52,546 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 22.341 seconds (JVM running for 605.081)
+2019-12-25 18:18:52,573 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-12-25 18:18:53,919 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:18:53,921 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 18:18:53,921 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@659bb6b8
+2019-12-25 18:18:53,923 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 18:18:53,925 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 18:18:53,932 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 18:18:53,935 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 18:18:53,935 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 18:18:53,935 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 14 ms
+2019-12-25 18:19:02,756 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:19:02,765 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:19:02,767 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: []
+2019-12-25 18:19:12,595 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:19:12,596 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:19:12,629 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:19:12,630 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:19:12 IST 2019, status=null, message=Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:19:12,638 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer]
+2019-12-25 18:19:12,639 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 18:19:12,640 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:19:55,859 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Starting FervourPersonalAppApplication on Vigneshs-MacBook.local with PID 2276 (/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main started by vignesh in /Users/vignesh/git/springboot-tutors/fervour-personal-app)
+2019-12-25 18:19:55,867 DEBUG com.personal.fervour.FervourPersonalAppApplication [restartedMain] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-12-25 18:19:55,870 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-12-25 18:19:56,359 DEBUG org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] Matching URLs for reloading : [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:19:56,360 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Included patterns for restart : []
+2019-12-25 18:19:56,363 DEBUG org.springframework.boot.devtools.settings.DevToolsSettings [restartedMain] Excluded patterns for restart : [/spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter/target/classes/]
+2019-12-25 18:19:56,365 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-25 18:20:03,005 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-25 18:20:03,317 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 278ms. Found 2 repository interfaces.
+2019-12-25 18:20:04,988 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bde5f18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:20:05,174 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$9b5eac4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-25 18:20:06,363 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9001 (http)
+2019-12-25 18:20:06,467 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2019-12-25 18:20:06,470 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-12-25 18:20:06,839 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-12-25 18:20:06,840 DEBUG org.springframework.web.context.ContextLoader [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-25 18:20:06,841 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 10447 ms
+2019-12-25 18:20:08,391 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping filters: filterRegistrationBean urls=[/*], characterEncodingFilter urls=[/*], hiddenHttpMethodFilter urls=[/*], formContentFilter urls=[/*], requestContextFilter urls=[/*], httpTraceFilter urls=[/*]
+2019-12-25 18:20:08,393 DEBUG org.springframework.boot.web.servlet.ServletContextInitializerBeans [restartedMain] Mapping servlets: dispatcherServlet urls=[/]
+2019-12-25 18:20:08,981 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-12-25 18:20:09,696 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-12-25 18:20:13,388 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:20:13,440 DEBUG org.springframework.boot.devtools.livereload.LiveReloadServer [restartedMain] Starting live reload server on port 35729
+2019-12-25 18:20:13,448 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-12-25 18:20:16,632 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-25 18:20:16,824 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.c.r.GenericResponseEntityExceptionHandler:
+	
+2019-12-25 18:20:16,876 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.l.DocumentContainer:
+	{POST /library/doc/upload, consumes [multipart/form-data]}: getUpload(MultipartFile)
+2019-12-25 18:20:16,889 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.TaskPriorityResource:
+	{POST /tasks/user/{id}/add}: addTask(String,TaskPriority)
+	{GET /tasks/{userId}/welcomeMsg}: getRequestMessage(Locale,String)
+2019-12-25 18:20:16,908 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.f.t.r.UserInfoResource:
+	{DELETE /users/profile/{id}}: deleteUser(String)
+	{PUT /users/profile}: updateUser(UserInfo)
+	{POST /users/profile}: addUser(UserInfo)
+	{GET /users/profile/{id}}: getUser(String)
+	{GET /users/profile/{id}/deactivate}: deactivateUser(String)
+2019-12-25 18:20:16,949 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	c.p.w.c.CustomerController:
+	{GET /customer/query}: getRequestMessage()
+2019-12-25 18:20:16,957 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-12-25 18:20:17,006 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-12-25 18:20:17,026 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 14 mappings in 'requestMappingHandlerMapping'
+2019-12-25 18:20:17,646 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-25 18:20:18,104 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-25 18:20:19,346 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-12-25 18:20:19,348 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-25 18:20:21,429 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:20:21,751 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-25 18:20:22,090 DEBUG org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-12-25 18:20:22,165 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-12-25 18:20:22,166 TRACE org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-12-25 18:20:22,167 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-25 18:20:22,240 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-25 18:20:26,431 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-12-25 18:20:26,854 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-12-25 18:20:27,376 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fervour-todo] [RMI TCP Connection(1)-192.168.0.100] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:20:27,380 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Initializing Servlet 'dispatcherServlet'
+2019-12-25 18:20:27,381 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@64e6797d
+2019-12-25 18:20:27,403 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-12-25 18:20:27,407 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-12-25 18:20:27,443 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-12-25 18:20:27,445 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-12-25 18:20:27,479 TRACE org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-12-25 18:20:27,480 DEBUG org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-25 18:20:27,481 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-192.168.0.100] Completed initialization in 101 ms
+2019-12-25 18:20:29,328 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2019-12-25 18:20:29,349 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2019-12-25 18:20:29,356 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2019-12-25 18:20:29,701 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: getRequestMessageUsingGET_1
+2019-12-25 18:20:30,784 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9001 (http) with context path '/fervour-todo'
+2019-12-25 18:20:30,802 INFO com.personal.fervour.FervourPersonalAppApplication [restartedMain] Started FervourPersonalAppApplication in 55.874 seconds (JVM running for 57.199)
+2019-12-25 18:20:30,925 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Creating new Restarter for thread Thread[main,5,main]
+2019-12-25 18:20:30,928 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Immediately restarting application
+2019-12-25 18:20:30,929 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4f8719fc
+2019-12-25 18:20:30,929 DEBUG org.springframework.boot.devtools.restart.Restarter [restartedMain] Starting application com.personal.fervour.FervourPersonalAppApplication with URLs [file:/Users/vignesh/git/springboot-tutors/fervour-personal-app/bin/main/]
+2019-12-25 18:25:37,852 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] GET "/fervour-todo/customer/query", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-12-25 18:25:37,910 TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-9001-exec-1] Mapped to public java.lang.String com.personal.wallet.controller.CustomerController.getRequestMessage()
+2019-12-25 18:25:37,962 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: []
+2019-12-25 18:25:38,152 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Using @ExceptionHandler public final org.springframework.http.ResponseEntity<java.lang.Object> com.personal.fervour.cmm.response.GenericResponseEntityExceptionHandler.handleAllException(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2019-12-25 18:25:38,157 TRACE org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod [http-nio-9001-exec-1] Arguments: [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, ServletWebRequest: uri=/fervour-todo/customer/query;client=0:0:0:0:0:0:0:1]
+2019-12-25 18:25:38,227 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-12-25 18:25:38,230 TRACE org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-9001-exec-1] Writing [CustomExceptionMessage(timeStamp=Wed Dec 25 18:25:38 IST 2019, status=null, message=Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer, debugMsg=Unknown Exception occured, path=/fervour-todo/customer/query)]
+2019-12-25 18:25:38,516 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-9001-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Not an entity: class com.personal.wallet.entity.Customer; nested exception is java.lang.IllegalArgumentException: Not an entity: class com.personal.wallet.entity.Customer]
+2019-12-25 18:25:38,517 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] No view rendering, null ModelAndView returned.
+2019-12-25 18:25:38,529 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-9001-exec-1] Completed 500 INTERNAL_SERVER_ERROR, headers={masked}
+2019-12-25 18:27:55,906 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-25 18:27:55,917 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-25 18:27:55,928 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-1 - Shutdown initiated...
+2019-12-25 18:27:55,959 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-1 - Shutdown completed.

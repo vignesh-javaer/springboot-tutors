@@ -17,6 +17,8 @@ import javax.validation.constraints.Size;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -28,6 +30,8 @@ import lombok.ToString;
 @Entity
 @Table(name="TASK_PRIORITY")
 @IdClass(TaskPriorityId.class)
+@JsonIgnoreProperties(value= {"userId","taskId","title","priority","status","status","description","percentage","createDate","dueDate","assigne","lastUpdatedBy","lastUpdateDate"}
+,allowSetters=true)
 @Getter @Setter
 @ToString
 public class TaskPriority implements Serializable {/**

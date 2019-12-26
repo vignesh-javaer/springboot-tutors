@@ -28,70 +28,73 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Entity
-@Table(name="USER_INFO")
-@JsonIgnoreProperties(value= {"createDate","lastUpdateDate","lastLoginDate","pke","status","hibernateLazyInitializer"},allowSetters=true)
-@Getter @Setter
+@Table(name = "USER_INFO")
+@JsonIgnoreProperties(value = { "createDate", "lastUpdateDate", "lastLoginDate", "pke",
+								"status",
+								"hibernateLazyInitializer" }, allowSetters = true)
+@Getter
+@Setter
 @ToString
-public class UserInfo 
-				extends ResourceSupport 
-				implements Serializable{
-	
+public class UserInfo extends ResourceSupport implements Serializable {
+
 	private static final long serialVersionUID = 7942317023479989029L;
-	
+
 	@Id
-	@Column(name="USER_ID")
-	@Pattern(regexp="^$|[a-zA-Z0-9_.]*")
-	@Size(min=5, max=20)
+	@Column(name = "USER_ID")
+	@Pattern(regexp = "^$|[a-zA-Z0-9_.]*", message = "user id should contain a-z or A-z"
+			+ " with numbers 0-9 and allowed special character is '.' other special chanracters"
+			+ "	are not allowed")
+	@Size(min = 5, max = 20, message = "user Id should conatain 5 - 20 characters only")
 	@NotNull
 	private String userId;
-	
-	@Column(name="FIRST_NAME")
+
+	@Column(name = "FIRST_NAME")
+	@Pattern(regexp = "^$|[a-zA-Z]*", message = "first name should contain only letters a-z or A-z")
+	@Size(min = 1, max = 50, message = "first name should conatain 1 - 50 characters only")
 	@NotNull
 	private String firstName;
-	
-	@Column(name="LAST_NAME")
+
+	@Column(name = "LAST_NAME")
+	@Pattern(regexp = "^$|[a-zA-Z]*", message = "first name should contain only letters a-z or A-z")
+	@Size(min = 1, max = 50, message = "last name should conatain 1 - 50 characters only")
 	@NotNull
 	private String lastName;
-	
-	@Column(name="EMAIL", unique=true)
+
+	@Column(name = "EMAIL", unique = true)
 	@NotNull
 	@Email
 	private String email;
-	
-	@Column(name="MOBILE", unique=true)
+
+	@Column(name = "MOBILE", unique = true)
 	@NotNull
-	@Pattern(regexp="^$|[0-9]{10}")
+	@Pattern(regexp = "^$|[0-9]{10}", message = "Invalid mobile number")
 	private String mobile;
-	
-	@Column(name="PKE")
+
+	@Column(name = "PKE")
 	@NotBlank
 	private String pke;
-	
+
 	@Past
-	@Column(name="BIRTH_DATE")
-	@JsonFormat(shape= Shape.STRING, pattern="yyyy-MM-dd")
+	@Column(name = "BIRTH_DATE")
+	@JsonFormat(shape = Shape.STRING, pattern = "dd-MM-yyyy")
 	@Temporal(TemporalType.DATE)
 	@NotNull
 	private Date birthDate;
-	
-	@Column(name="STATUS")
+
+	@Column(name = "STATUS")
 	@NotNull
 	private String status = "ACTIVE";
-	
-	
-	@Column(name="CREATE_DATE")
+
+	@Column(name = "CREATE_DATE")
 	@CreationTimestamp
 	private Date createDate;
 
-	@Column(name="LAST_UPDATE_DATE")
+	@Column(name = "LAST_UPDATE_DATE")
 	private Date lastUpdateDate;
-	
-	@Column(name="LAST_LOGIN_DATE")
+
+	@Column(name = "LAST_LOGIN_DATE")
 	@UpdateTimestamp
 	private Date lastLoginDate;
-	
-	
 
 }
